@@ -1,6 +1,8 @@
 Aplikasi Web Profile HTML
 
-
+![1.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/1.png)
+![2.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/2.png)
+![3.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/3.png)
 
 1. Dockerfile merupakan script yang yang berisi dari serangkaian perintah yang akan dieksekusi secara otomatis dan berurutan untuk membuat sebuah image. Oleh karena itu, script yang digunakan untuk aplikasi web diatas pada Dockerfile adalah : 3.JPG
 
