@@ -4,8 +4,6 @@ Aplikasi Web Profile HTML
 
     Docker image merupakan template dasar untuk docker container. Image ini berisi sistem oeprasi ataupun aplikasi yang sudah selesai. Docker image ini berfungsi untuk menjalankan container.
 
-![4.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/4.png)
-
 2. Dockerfile
 
     Dockerfile merupakan script yang yang berisi dari serangkaian perintah yang akan dieksekusi secara otomatis dan berurutan untuk membuat sebuah image. 
@@ -44,5 +42,4 @@ Perintah diatas dgunakan untuk memindahkan projek dari lokal host ke github
 
 Prestasi
 
-    Github Contribution : https://github.com/RobertNorthard/adop-pipeline-builder/pulls?q=is%3Apr+author%3Aendahprastiwi
-
+    Github Contribution : https://github.com/jiharAkakom/fcm/graphs/contributors
