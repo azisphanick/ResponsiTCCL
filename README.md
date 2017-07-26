@@ -1,25 +1,48 @@
 Aplikasi Web Profile HTML
 
-![1.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/1.png)
-![2.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/2.png)
-![3.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/3.png)
+1. Docker Image
+
+    Docker image merupakan template dasar untuk docker container. Image ini berisi sistem oeprasi ataupun aplikasi yang sudah selesai. Docker image ini berfungsi untuk menjalankan container.
+
 ![4.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/4.png)
 
-1. Dockerfile merupakan script yang yang berisi dari serangkaian perintah yang akan dieksekusi secara otomatis dan berurutan untuk membuat sebuah image. Oleh karena itu, script yang digunakan untuk aplikasi web diatas pada Dockerfile adalah : 3.JPG
+2. Dockerfile
 
-Nah, penjelasan untuk gambar diatas adalah seperti berikut :
+    Dockerfile merupakan script yang yang berisi dari serangkaian perintah yang akan dieksekusi secara otomatis dan berurutan untuk membuat sebuah image. 
 
-    FROM httpd:2.4 merupakan images yang kita gunakan. Berarti kita menggunakan images httpd:2.42.
-    Lalu, COPY ./public-html/ /usr/local/apache2/htdocs/ merupakan perintah yang digunakan untuk memindahkan file public_html ke dalam docker kita
+Nah, penjelasan untuk script yang ada pada dockerfile :
 
-Sebelum melangkah kedalam Dockerfile, kita harus membuat direktori terlebih dahulu. Perintah yang digunakan mkdir tccl. Kemudian, masuk ke dalam direktori tersebut dengan perintah cd tccl. Barulah touch Dockerfile. Lalu, vi Dockerfile dan mengetikkan script config pada file Dockerfile tersebut. Dapat dilihat pada gambar berikut ini : 1.JPG
+    FROM nginx 
+    MAINTAINER azisphanick azisp73@gmail.com
+    ADD . /usr/share/nginx/html
 
-Gambar diatas terdapat perintah docker build -t responsi . Berarti perintah tersebut digunakan untuk membangun images yang akan kita gunakan yakni responsi. Hasilnya dapt dilihat pada gambar diatas.
+![1.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/1.png)
 
-2.JPG
 
-Gambar diatas terdapat perintah docker run -p 8080:80 --name responsi-1 responsi . Berarti perintah tersebut digunakan untuk menjalankan images responsi di localhost dengan port 80 yang namanya responsi-1. Hasilnya dapt dilihat pada gambar diatas.
+   Kemudian kita membuat direktori baru degan perintah yang digunakan mkdir responsiku, Setelah itu buat dan tambahkan file README.md kedalam direktori tersebut.
+   
+3. Membuat Image
+
+![2.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/2.png)
+
+Perintah docker build -t responsiku ., digunakan untuk membuat images yang akan kita gunakan yaitu responsiku. Hasilnya dapt dilihat pada gambar diatas.
+
+![3.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/3.png)
+
+Perintah docker run -p 8080:80 --name responsiku-1 responsiku, digunakan untuk menjalankan images responsi di localhost dengan port 80 yang namanya responsiku-1. 
+
+4. Push Image ke Github
+
+![5.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/5.png)
+
+Perintah diatas dgunakan untuk memindahkan projek dari lokal host ke github
+
+5. Hasil
+ 
+![4.png](https://github.com/azisphanick/ResponsiTCCL/blob/master/4.png)
+
+
 Prestasi
 
     Github Contribution : https://github.com/RobertNorthard/adop-pipeline-builder/pulls?q=is%3Apr+author%3Aendahprastiwi
-# ResponsiTCCL
+
